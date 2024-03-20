@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
+  <link href="css/style.css" rel="stylesheet">
+ 
+</head>
+<body>
+  <header class="shadow-neon">
+    <nav class="max-w-[1425px] px-5 mx-auto ">
+        <div class="pt-[28px] pb-[24px] flex justify-between items-center">
+            <h2 class="text-blackee font-Manrope sm:text-[32px] xxs:text-lg font-semibold">Auto<span class="text-supblue">cation</span>24</h2>
+            <div>
+                <p class="text-blackee font-Manrope sm:text-xl xxs:text-sm font-medium flex sm:gap-[10px] xxs:gap-1 items-center">
+                <img src="images/car.svg" alt="car">Devenez un partenaire</p>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <!-- Presque fini   -->
+  <section class="max-w-[1282px] mx-auto px-5 default">
+    <h3 class="mt-[79px] text-blackee font-Manrope xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl xxs:text-base font-semibold text-center">Presque fini</h3>
+    <p class="mt-[58px] text-blackee xl:text-[32px] lg:text-[24px] md:text-lg xxs:text-base font-medium text-center">Entrez vos coordonnées afin que nous puissions vous informer des nouvelles offres</p>
+<!-- start  -->
+
+<div class="flex sm:gap-[162px] xxs:gap-10 items-center mt-[72px]">
+<h2 class="text-blackee font-Manrope xl:text-[32px] lg:text-[24px] md:text-lg xxs:text-base font-medium">Moteur</h2>
+<div class="relative">
+    <div class="absolute inset-y-0 start-0 flex items-center ps-[37px] pointer-events-none">
+        <img src="images/petrol.svg" class="" alt="calendar">
+    </div>
+    <form class="w-[221px]">
+        <select id="countries" class="text-supgrey font-Manrope font-medium
+        focus:ring-blue-500 focus:border-blue-500 border border-lightgrey xl:text-xl  lg:text-base sm:text-sm block w-full py-[24px] pl-[70px]">
+          <option value="US">Diesel</option>
+          <option value="CA">Canada</option>
+          <option value="FR">France</option>
+          <option value="DE">Germany</option>
+        </select>
+      </form>
+</div>
+</div>
+<div class="flex  sm:gap-[162px] xxs:gap-10 items-center mt-[58px]">
+    <h2 class="text-blackee font-Manrope xl:text-[32px] lg:text-[24px] md:text-lg xxs:text-base font-medium">Vitesse</h2>
+    <div class="relative">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-[37px] pointer-events-none">
+            <img src="images/manu.svg" class="" alt="manu">
+        </div>
+        <form class="w-[221px]">
+            <select id="countries" class="text-supgrey font-Manrope font-medium
+            focus:ring-blue-500 focus:border-blue-500 border border-lightgrey xl:text-xl  lg:text-base sm:text-sm block w-full py-[24px] pl-[70px]">
+              <option value="US">Diesel</option>
+              <option value="CA">Canada</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+            </select>
+          </form>
+    </div>
+</div>
+
+<div class="flex sm:gap-[162px] xxs:gap-10 items-center mt-[58px]">
+    <h2 class="text-blackee font-Manrope xl:text-[32px] lg:text-[24px] md:text-lg xxs:text-base font-medium">Voiture</h2>
+    <div class="relative">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-[25px] pointer-events-none">
+            <img src="images/carpetite.svg" class="" alt="carpetite">
+        </div>
+        <form class="sm:w-[311px] xxs:max-w-full">
+            <select id="countries" class="text-supgrey font-Manrope font-medium
+            focus:ring-blue-500 focus:border-blue-500 border border-lightgrey xl:text-xl  lg:text-base sm:text-sm block w-full py-[24px] pl-[86px]">
+              <option value="US">petite (4 places)</option>
+              <option value="CA">Canada</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+            </select>
+          </form>
+    </div>
+</div>
+
+<div class="flex xl:gap-[208px] lg:gap-[195px] md:gap-[190px] sm:gap-[185px] xxs:gap-[62px] items-center mt-[58px]">
+    <h2 class="text-blackee font-Manrope xl:text-[32px] lg:text-[24px] md:text-lg xxs:text-base font-medium">Etat</h2>
+    <div class="relative">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-[25px] pointer-events-none">
+            <img src="images/carpetite.svg" class="" alt="carpetite">
+        </div>
+        <form class="sm:w-[311px] xxs:max-w-full">
+            <select id="countries" class="text-supgrey font-Manrope font-medium
+            focus:ring-blue-500 focus:border-blue-500 border border-lightgrey xl:text-xl  lg:text-base sm:text-sm block w-full py-[24px] pl-[86px]">
+              <option value="US">petite (4 places)</option>
+              <option value="CA">Canada</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+            </select>
+          </form>
+    </div>
+</div>
+  
+<button class="mt-[72px] xl:w-[283px] lg:w-[240px] sm:w-[200px] xxs:w-[150px] h-[72px] bg-supblue hover:bg-blue-500 rounded-[9px] text-whitee font-Manrope xl:text-[32px] lg:text-[24px] sm:text-xl font-semibold">Enregistrer</button>
+<!-- end    -->
+</section>
+<!-- footer  -->
+<footer class="border-t-[5px] border-[#F5F5F5] md:mt-[1481px] xxs:mt-[100px]">
+  <div class="max-w-[1380px] px-5 mx-auto py-[106px]">
+    <h2 class="text-blackee font-Manrope text-[32px] sm:text-start xxs:text-center font-semibold">Auto<span class="text-supblue">cation</span>24</h2>
+    <div class="flex sm:flex-row xxs:flex-col xl:gap-[122px] lg:gap-[100px] md:gap-[65px] sm:gap-[15px] xxs:gap-10 sm:items-start
+    xxs:items-center md:mt-[11px] sm:mt-[21px]">
+    <ul class="flex md:gap-[17px] sm:gap-[5px] xxs:gap-3 items-center sm:mt-0 xxs:mt-10">
+      <li><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
+      <li><a href="#"><img src="images/facebook.svg" alt="facebook"></a></li>
+      <li><a href="#"><img src="images/link.svg" alt="link"></a></li>
+      <li><a href="#"><img src="images/youtube.svg" alt="youtube"></a></li>
+    </ul>
+
+    <ul class="text-blackee font-Manrope lg:text-base sm:text-sm font-normal flex flex-col gap-[17px]">
+      <li class="hover:text-supblue"><a href="#">About us</a></li>
+      <li class="hover:text-supblue"><a href="#">Terms of Service</a></li>
+      <li class="hover:text-supblue"><a href="#">Help Centres</a></li>
+      <li class="hover:text-supblue"><a href="#">Press</a></li>
+      <li class="hover:text-supblue"><a href="#">Career</a></li>
+    </ul>
+
+    <form class="!max-w-[280px]">
+        <select id="countries" class="broder border-transparent text-supgrey  font-Manrope font-medium
+        focus:ring-blue-500 focus:border-blue-500 xl:text-xl lg:text-base sm:text-sm block w-full p-2.5 lg:!pr-[89px] md:!pr-[40px]">
+          <option value="US">English (India)</option>
+          <option value="CA">Canada</option>
+          <option value="FR">France</option>
+          <option value="DE">Germany</option>
+        </select>
+      </form>
+
+    <ul class="text-blackee font-Manrope lg:text-base sm:text-sm font-normal flex flex-col gap-[17px]">
+      <li class="hover:text-supblue"><a href="#">About us</a></li>
+      <li class="hover:text-supblue"><a href="#">Terms of Service</a></li>
+      <li class="hover:text-supblue"><a href="#">Help Centres</a></li>
+      <li class="hover:text-supblue"><a href="#">Press</a></li>
+      <li class="hover:text-supblue"><a href="#">Career</a></li>
+    </ul>
+
+    
+
+
+    </div>
+
+  <p class="text-blackee font-Manrope md:text-xl sm:text-base font-medium sm:text-start xxs:text-center mt-[55px]">©2023, Autocation24</p>
+  </div>
+
+</footer>
+<!-- flowbite  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>

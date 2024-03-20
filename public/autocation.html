@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="shadow-neon">
+    <nav class="max-w-[1425px] px-5 mx-auto ">
+        <div class="pt-[28px] pb-[24px] flex justify-between items-center">
+            <h2 class="text-blackee font-Manrope sm:text-[32px] xxs:text-lg font-semibold">Auto<span class="text-supblue">cation</span>24</h2>
+            <div>
+                <p class="text-blackee font-Manrope sm:text-xl xxs:text-sm font-medium flex sm:gap-[10px] xxs:gap-1 items-center">
+                <img src="images/car.svg" alt="car">Devenez un partenaire</p>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <section class="max-w-[1380px] px-5 mx-auto mt-[31px]">
+    <div class="flex justify-between md:flex-row xxs:flex-col-reverse items-center">
+        <div class="max-w-[466px]">
+        <h2 class="text-blackee font-Manrope lg:text-[32px] sm:text-2xl xxs:text-xl font-semibold pt-[24px]">Autocation?</h2>
+        <p class="text-blackee font-Manrope lg:text-xl md:text-sm sm:text-base xxs:text-sm
+        max-w-[500px] font-medium py-6">Notre mission est de vous épargner le stress de louer votre prochaine voiture. Grâce à notre système innovant, il vous suffit de lancer une recherche. Nous nous occupons du reste. Nous collecterons les meilleures offres de notre vaste réseau de partenaires locaux pour vous. Une fois décidé, nous vous connectons avec notre partenaire pour récupérer les cles.</p>
+        <p class="text-blackee font-Manrope lg:text-xl md:text-sm sm:text-base xxs:text-sm font-medium">C'est simple, garanti et pertinent.</p>
+        </div>
+        <div>
+            <img src="images/groupcar.png" alt="groupcar">
+        </div>
+    </div>
+  </section>
+  <!-- ville  -->
+  <section class="xl:max-w-[1412px] lg:max-w-[1000px] md:max-w-[800px] px-5 mx-auto mt-[91px]">
+    <div class="border-[2px] border-supblue lg:p-[10px] sm:p-[5px]">
+        <div class="flex md:flex-row sm:flex-col xxs:flex-col items-center lg:gap-0 md:gap-2 sm:gap-4">
+            <!-- first input field  -->
+            <div class="relative rounded-md mb-4 lg:mb-0  sm:mb-0 lg:mr-4 sm:mt-0 xxs:mt-3">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span class=""> <img src="images/map.svg" alt="map"></span>
+                </div>
+                <input type="text" name="price" id="price" class="bg-[#F5F5F5] block xl:w-[373px] 
+                lg:w-[273px] md:w-full sm:w-[424px] xxs:w-full
+                rounded-[4px] lg:py-[23px] md:py-[13px] pl-[42px] xl:pr-20 lg:pr-0 text-gray-900
+                placeholder:text-supgrey placeholder:font-Manrope xl:placeholder:text-xl lg:placeholder:text-base 
+                md:placeholder:text-sm placeholder:font-medium 
+                focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-[14px]  border-transparent"
+                placeholder="Ville de récupération">
+            </div>
+            <!-- second input field -->
+            <div date-rangepicker class="flex sm:flex-row xxs:flex-col items-center bg-[#F5F5F5] lg:w-full md:w-[65%]
+            sm:max-w-[80%] mx-auto">
+                <div class="relative">
+                    <div class="absolute inset-y-0 top-[-6px] start-0 flex items-center ps-3 pointer-events-none">
+                        <img src="images/calendar.png" class="lg:w-[30px] lg:h-[30px] md:w-[25px] md:h-[25px]" alt="calendar">
+                    </div>
+                    <input name="start" id="datetimepicker" type="text" class="bg-[#F5F5F5] text-gray-900 
+                    text-sm rounded-lg 3xl:w-[373px] 2xl:w-[350px] xl:w-[300px] lg:w-[220px] md:w-auto sm:w-[200px] xxs:w-[237px]
+                    focus:ring-blue-500 focus:border-blue-500 block border-transparent  ps-[50px] p-2.5
+                    lg:py-[23px] md:py-[13px] 
+                    placeholder:text-supgrey placeholder:font-Manrope xl:placeholder:text-xl lg:placeholder:text-base
+                    md:placeholder:text-sm placeholder:font-medium"
+                    placeholder="09/03/2024 à 10:00">
+                </div>
+                <span class="mx-2 text-supgrey font-Manrope text-xl font-medium">-</span>
+                <div class="relative">
+                    <input name="end" id="datetimepicker1" type="text" class="bg-[#F5F5F5] text-gray-900
+                    text-sm rounded-lg 3xl:w-[373px] 2xl:w-[350px] xl:w-[300px] lg:w-[220px] md:w-auto sm:w-[200px] xxs:w-[237px]
+                    focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
+                    xl:pl-[64px] lg:pl-[20px] 
+                    lg:py-[23px] md:py-[13px] border-transparent
+                    placeholder:text-supgrey placeholder:font-Manrope xl:placeholder:text-xl lg:placeholder:text-base
+                    md:placeholder:text-sm placeholder:font-medium"
+                    placeholder="19/03/2024 à 23:00">
+                </div>
+            
+            </div>
+            <div class="md:ml-auto sm:ml-0 xxs:ml-0 sm:mb-0 xxs:mb-3">
+              <button class="bg-supblue lg:px-[35px] md:px-[10px] sm:px-[8px] lg:py-[22px] md:py-[12px] 
+              sm:py-[9px] xxs:py-4 xxs:px-5 rounded-[8px] mt-4 sm:mt-0 
+              lg:mt-0 md:mt-0 lg:ml-4 hover:bg-blue-500">Commencer</button>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- comment  -->
+<section class="max-w-[1320px] mx-auto px-5 mt-[95px]">
+    <h2 class="text-blackee sm:text-center xxs:text-start font-semibold font-Manrope md:text-[48px] sm:text-[24px] xxs:text-xl">Comment ça marche?</h2>
+    <!-- cards  -->
+    <div class="relative">
+        <div class="max-w-[583px] mx-auto md:mt-[204px] sm:mt-[100px] xxs:mt-[60px]">
+            <img src="images/carmob.png" alt="carmob">
+        </div>
+        <!-- step1  -->
+        <div class="md:mt-0 xxs:mt-8 md:absolute sm:relative md:top-[-140px] sm:top-0 lg:max-w-[366px] md:max-w-[320px] rounded-[7px] bg-whitee shadow-neon2 pl-[6px] pt-[4px] pb-[14px] pr-[10px] ">
+            <h2 class="text-blackee font-Manrope lg:text-xl md:text-base xxs:text-base font-bold flex gap-[10px] items-center"><img src="images/step1.png" alt="step1"> Soumettez votre recherche</h2>
+        <p class="mt-3 text-blackee font-Manrope lg:text-base md:text-sm sm:text-base xxs:text-sm font-medium">Entrez tous les détails possibles pour affiner la recherche</p>
+        </div>
+        <!-- step2  -->
+        <div class="md:mt-0 xxs:mt-8 md:absolute sm:relative  md:top-[-125px] sm:top-0 xl:right-[270px] lg:right-[70px] md:right-[0px] lg:max-w-[366px] md:max-w-[320px] rounded-[7px] bg-whitee shadow-neon2 pl-[6px] pt-[4px] pb-[14px] pr-[10px] ">
+            <h2 class="text-blackee font-Manrope lg:text-xl md:text-base font-bold flex gap-[10px] items-center"><img src="images/step2.png" alt="step2">Envoi de demande</h2>
+        <p class="mt-3 text-blackee font-Manrope lg:text-base md:text-sm sm:text-base xxs:text-sm font-medium">Une demande est envoyée à tous nos partenaires pour collecter les meilleures offres pour vous</p>
+        </div>
+        <!-- step3  -->
+        <div class="md:mt-0 xxs:mt-8 md:absolute sm:relative md:top-[80px] sm:top-0 right-0 lg:max-w-[366px] md:max-w-[320px] rounded-[7px] bg-whitee shadow-neon2 pl-[6px] pt-[4px] pb-[14px] pr-[10px] ">
+            <h2 class="text-blackee font-Manrope lg:text-xl md:text-base font-bold flex gap-[10px] items-center"><img src="images/step3.png" alt="step3">Notifications</h2>
+        <p class="mt-3 text-blackee font-Manrope lg:text-base md:text-sm sm:text-base xxs:text-sm font-medium">Vous recevrez une notification chaque fois un partenaire vous fera une offre.</p>
+        </div>
+        <!-- step4  -->
+        <div class="md:mt-0 xxs:mt-8 md:absolute sm:relative md:top-52 sm:top-0 left-0 lg:max-w-[366px] md:max-w-[320px] xxs:max-w-full rounded-[7px] bg-whitee shadow-neon2 pl-[6px] pt-[4px] pb-[14px] pr-[10px] ">
+            <h2 class="text-blackee font-Manrope lg:text-xl md:text-base font-bold flex gap-[10px] items-center"><img src="images/step5.png" alt="step4">Contactez le partenaire</h2>
+        <p class="mt-3 text-blackee font-Manrope lg:text-base md:text-sm  sm:text-base xxs:text-sm font-medium">Nous vous mettrons en contact avec le partenaire pour finaliser le processus de location</p>
+        </div>
+        <!-- step5  -->
+        <div class="md:mt-0 xxs:mt-8 md:absolute sm:relative bottom-[-100] lg:left-[42%] md:left-[33%] lg:max-w-[366px] md:max-w-[320px] rounded-[7px] bg-whitee shadow-neon2 pl-[6px] pt-[4px] pb-[14px] pr-[10px] ">
+            <h2 class="text-blackee font-Manrope lg:text-xl md:text-base font-bold flex gap-[10px] items-center"><img src="images/step4.png" alt="step5">Comparaison</h2>
+        <p class="mt-3 text-blackee font-Manrope lg:text-base md:text-sm sm:text-base xxs:text-sm font-medium">Maintenant que vous avez reçu de nombreuses offres, c’est à vous de décider quelle voiture vous aimeriez louer</p>
+        </div>
+        <!-- step5 end  -->
+
+    </div>
+</section>
+
+<!-- Pourquoi Autocation?  -->
+<section class="max-w-[1160px] mx-auto px-5 mt-[202px]">
+    <h2 class="text-blackee text-center font-Manrope md:text-[48px] sm:text-[30px] xxs:text-[24px] font-semibold">Pourquoi Autocation?</h2>
+    <div class="flex flex-col gap-[32px]">
+    <!-- step1  -->
+    <div class="flex md:flex-row xxs:flex-col justify-between items-center bg-lightblue rounded-[10px] px-[38px] py-6 mt-[56px]">
+        <div class="">
+            <div class="text-blackee font-Manrope lg:text-[42px] md:text-[24px] sm:text-[30px] xxs:text-xl
+            font-medium leading-[33px] flex sm:gap-5 xxs:gap-2 sm:pt-[116px] xxs:pt-[25px]">
+                <h2 class="text-brightred2">01.</h2>
+                <h2>Pour vous c’est simple</h2>
+            </div>
+            <p class="text-supgrey font-Manrope lg:text-xl md:text-base sm:text-base  xxs:text-sm  font-medium pt-[35px] pb-[100px]">Nous faisons le travail difficile pour vous</p>
+        </div>
+        <img src="images/carmen.png" alt="" class="md:w-auto xxs:w-[40%]">
+    </div>
+    <!-- step2  -->
+    <div class="flex md:flex-row xxs:flex-col-reverse justify-between items-center rounded-[10px] bg-lightblue px-[38px] py-6 ">
+        <img src="images/carwithlock.png" alt="carwithlock" class="md:w-auto xxs:w-[40%]">
+        <div class="">
+            <div class="text-blackee font-Manrope lg:text-[42px] md:text-[24px]  sm:text-[30px] xxs:text-xl 
+            font-medium leading-[33px] flex sm:gap-5 xxs:gap-2 sm:pt-[116px] xxs:pt-[25px]">
+                <h2 class="text-brightred2">02.</h2>
+                <h2>Garantie</h2>
+            </div>
+            <p class="lg:max-w-[414px] md:max-w-[250px] sm:max-w-[350px] text-supgrey font-Manrope lg:text-xl md:text-sm
+             sm:text-base xxs:text-sm  font-medium pt-[35px] pb-[100px]">
+                Pas d'annulation à la dernière minute. Nous somme le garrant pour vous</p>
+        </div>
+        
+    </div>
+    <!-- step3  -->
+    <div class="flex md:flex-row xxs:flex-col justify-between items-center bg-lightblue rounded-[10px] px-[38px] py-6">
+        <div class="">
+            <div class="text-blackee font-Manrope lg:text-[42px] md:text-[24px]  sm:text-[30px] xxs:text-xl 
+            font-medium leading-[33px] flex sm:gap-5 xxs:gap-2 sm:pt-[116px] xxs:pt-[25px]">
+                <h2 class="text-brightred2">03.</h2>
+                <h2>Prix abordables</h2>
+            </div>
+            <p class="lg:max-w-[403px] md:max-w-[280px] text-supgrey font-Manrope  lg:text-xl md:text-sm sm:text-base
+            xxs:text-sm  font-medium pt-[35px] pb-[100px]">
+                Vous recevez les meilleures offres basées sur le marché.</p>
+        </div>
+        <img src="images/piggy.png" alt="piggy" class="md:w-auto xxs:w-[40%]">
+    </div>
+    <!-- step4  -->
+    <div class="flex md:flex-row xxs:flex-col-reverse justify-between items-center rounded-[10px] bg-lightblue px-[38px] py-6 ">
+        <img src="images/callcenter.png" alt="callcenter" class="md:w-auto xxs:w-[40%]">
+        <div class="">
+            <div class="text-blackee font-Manrope lg:text-[42px] md:text-[24px]  sm:text-[30px] xxs:text-xl 
+            font-medium leading-[33px] flex sm:gap-5 xxs:gap-2 sm:pt-[116px] xxs:pt-[25px]">
+                <h2 class="text-brightred2">04.</h2>
+                <h2>Support 24h/7</h2>
+            </div>
+            <p class="lg:max-w-[403px] md:max-w-[280px] text-supgrey font-Manrope lg:text-xl md:text-sm
+             sm:text-base xxs:text-sm font-medium pt-[35px] pb-[100px]">
+                Besoin d'aide? vous pouvez nous joindre à tout moment</p>
+        </div>
+        
+    </div>
+
+    </div>
+</section>
+<!-- Devenez un partenaire?  -->
+<section class="bg-[#F5F5F5]">
+    <div class="max-w-[1234px] mx-auto py-6 px-5 md:mt-[156px] xxs:mt-[70px] ">
+<div class="flex items-center sm:flex-row xxs:flex-col-reverse justify-between">
+    <div class="flex flex-col items-center">
+        <h2 class="text-blackee text-center font-Manrope xl:text-[48px] lg:text-[42px] md:text-[24px] xxs:text-[20px] sm:mt-0 xxs:mt-[30px] font-semibold">Devenez un partenaire?</h2>
+        <p class="text-blackee text-center font-Manrope lg:text-xl md:text-sm xxs:text-sm font-medium pt-[16px] sm:pb-[40px] xxs:pb-5">
+            Rejoignez-nous et recevez plus de demandes</p>
+        <button type="button" class="rounded-[48px] bg-supblue lg:w-[262px] lg:h-[77px] md:w-[222px]
+        md:h-[57px] sm:w-[132px] sm:h-[47px] xxs:w-[152px] xxs:h-[47px] text-whitee 
+        font-Manrope md:text-[24px] sm:text-sm font-semibold hover:bg-blue-500">Contactez-nous</button>
+    </div>
+    <div>
+        <img src="images/menwithwomen.png" alt="menwithwomen">
+    </div>
+</div>
+</div>
+</section>
+
+<!-- accordian  -->
+<section class="max-w-[1190px] mx-auto px-5 lg:mt-[333px] md:mt-[200px] xxs:mt-[60px]">
+ <h2 class="text-[#0F1113] font-Manrope text-[30px] font-medium">FAQ</h2>
+<div id="accordion-collapse" data-accordion="collapse" class="mt-[34px]">
+  <h2 id="accordion-collapse-heading-1" class="mt-[21px]">
+    <button type="button" class="flex items-center justify-between w-full px-[25px] py-[15px] font-medium rtl:text-right
+    text-darkgrey border  border-[#E5E7EB] focus:ring-2 focus:ring-gray-200 
+      hover:bg-gray-100  gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+      <span class="font-Manrope lg:text-[21px] lg:leading-8  sm:text-sm font-medium text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed scelerisque egestas nibh.</span>
+      <img src="images/plus.svg" alt="">
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+    <div class="p-5 border border-gray-200 dark:border-gray-700">
+      <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+    </div>
+  </div>
+    <h2 id="accordion-collapse-heading-2" class="mt-[21px]">
+      <button type="button" class="flex items-center justify-between w-full px-[25px] py-[15px] font-medium rtl:text-right
+      text-darkgrey border  border-[#E5E7EB] focus:ring-2 focus:ring-gray-200 
+        hover:bg-gray-100  gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="true" aria-controls="accordion-collapse-body-2">
+        <span class="font-Manrope lg:text-[21px] lg:leading-8 sm:text-sm font-medium text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed scelerisque egestas nibh.</span>
+        <img src="images/plus.svg" alt="">
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+      <div class="p-5 border border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+        <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+      </div>
+    </div>
+    <h2 id="accordion-collapse-heading-3" class="mt-[21px]">
+      <button type="button" class="flex items-center justify-between w-full px-[25px] py-[15px] font-medium rtl:text-right
+      text-darkgrey border border-[#E5E7EB] focus:ring-2 focus:ring-gray-200 
+        hover:bg-gray-100  gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="true" aria-controls="accordion-collapse-body-3">
+        <span class="font-Manrope lg:text-[21px] lg:leading-8 sm:text-sm font-medium text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed scelerisque egestas nibh.</span>
+        <img src="images/plus.svg" alt="">
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+      <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+      </div>
+    </div>
+    <!-- 4  -->
+    <h2 id="accordion-collapse-heading-4" class="mt-[21px]">
+      <button type="button" class="flex items-start justify-between w-full px-[25px] py-[15px] font-medium rtl:text-right
+      text-darkgrey border  border-[#E5E7EB] focus:ring-2 focus:ring-gray-200 
+        hover:bg-gray-100  gap-3" data-accordion-target="#accordion-collapse-body-4" aria-expanded="true" aria-controls="accordion-collapse-body-4">
+        <span class="font-Manrope lg:text-[21px] lg:leading-8 sm:text-sm font-medium max-w-[1058px] text-start">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum vel enim sed quam in arcu nunc sed mattis.
+        </span>
+        <img src="images/plus.svg" alt="plus" class="mt-1">
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+      <div class="p-5 border border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+        <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+      </div>
+    </div>
+    <!-- 5  -->
+    <h2 id="accordion-collapse-heading-5" class="mt-[21px]">
+      <button type="button" class="flex items-center justify-between w-full px-[25px] py-[15px] font-medium rtl:text-right
+      text-darkgrey border  border-[#E5E7EB] focus:ring-2 focus:ring-gray-200 
+        hover:bg-gray-100  gap-3" data-accordion-target="#accordion-collapse-body-5" aria-expanded="true" aria-controls="accordion-collapse-body-5">
+        <span class="font-Manrope lg:text-[21px] lg:leading-8 sm:text-sm font-medium text-start">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed scelerisque egestas nibh.</span>
+        <img src="images/plus.svg" alt="">
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+      <div class="p-5 border border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+        <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+      </div>
+    </div>
+    <!-- 6  -->
+    <h2 id="accordion-collapse-heading-6" class="mt-[21px]">
+      <button type="button" class="flex items-center justify-between w-full px-[25px] py-[15px] font-medium rtl:text-right
+      text-darkgrey border  border-[#E5E7EB] focus:ring-2 focus:ring-gray-200 
+        hover:bg-gray-100  gap-3" data-accordion-target="#accordion-collapse-body-6" aria-expanded="true" aria-controls="accordion-collapse-body-6">
+        <span class="font-Manrope lg:text-[21px] lg:leading-8 sm:text-sm font-medium text-start">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit amet scelerisque volutpat hac mauris.</span>
+        <img src="images/plus.svg" alt="">
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-6" class="hidden" aria-labelledby="accordion-collapse-heading-6">
+      <div class="p-5 border border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+        <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+      </div>
+    </div>
+    <!-- 7  -->
+    <h2 id="accordion-collapse-heading-7" class="mt-[21px]">
+      <button type="button" class="flex items-start justify-between w-full px-[25px] py-[15px] font-medium rtl:text-right
+      text-darkgrey border  border-[#E5E7EB] focus:ring-2 focus:ring-gray-200 
+        hover:bg-gray-100  gap-3" data-accordion-target="#accordion-collapse-body-7" aria-expanded="true" aria-controls="accordion-collapse-body-7">
+        <span class="font-Manrope lg:text-[21px] lg:leading-8 sm:text-sm font-medium max-w-[1058px] text-start">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum vel enim sed quam in arcu nunc sed mattis.</span>
+        <img src="images/plus.svg" alt="plus" class="mt-1">
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-7" class="hidden" aria-labelledby="accordion-collapse-heading-7">
+      <div class="p-5 border border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+        <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+      </div>
+    </div>
+    <!-- 7end  -->
+  </div>
+  
+</section>
+
+<!-- footer  -->
+<footer class="border-t-[5px] border-[#F5F5F5] mt-[128px] lg:mb-[75px] md:mb-0">
+  <div class="max-w-[1380px] px-5 mx-auto py-[106px]">
+    <h2 class="text-blackee font-Manrope text-[32px] sm:text-start xxs:text-center font-semibold">Auto<span class="text-supblue">cation</span>24</h2>
+    <div class="flex sm:flex-row xxs:flex-col xl:gap-[122px] lg:gap-[100px] md:gap-[65px] sm:gap-[15px] xxs:gap-10 sm:items-start
+    xxs:items-center md:mt-[11px] sm:mt-[21px]">
+    <ul class="flex md:gap-[17px] sm:gap-[5px] xxs:gap-3 items-center sm:mt-0 xxs:mt-10">
+      <li><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
+      <li><a href="#"><img src="images/facebook.svg" alt="facebook"></a></li>
+      <li><a href="#"><img src="images/link.svg" alt="link"></a></li>
+      <li><a href="#"><img src="images/youtube.svg" alt="youtube"></a></li>
+    </ul>
+
+    <ul class="text-blackee font-Manrope lg:text-base sm:text-sm font-normal flex flex-col gap-[17px]">
+      <li class="hover:text-supblue"><a href="#">About us</a></li>
+      <li class="hover:text-supblue"><a href="#">Terms of Service</a></li>
+      <li class="hover:text-supblue"><a href="#">Help Centres</a></li>
+      <li class="hover:text-supblue"><a href="#">Press</a></li>
+      <li class="hover:text-supblue"><a href="#">Career</a></li>
+    </ul>
+
+    <ul class="text-blackee font-Manrope lg:text-base sm:text-sm font-normal flex flex-col gap-[17px]">
+      <li class="hover:text-supblue"><a href="#">About us</a></li>
+      <li class="hover:text-supblue"><a href="#">Terms of Service</a></li>
+      <li class="hover:text-supblue"><a href="#">Help Centres</a></li>
+      <li class="hover:text-supblue"><a href="#">Press</a></li>
+      <li class="hover:text-supblue"><a href="#">Career</a></li>
+    </ul>
+
+    
+<form class="!max-w-[280px]">
+  <select id="countries" class="broder border-transparent text-supgrey  font-Manrope font-medium
+  focus:ring-blue-500 focus:border-blue-500 xl:text-xl lg:text-base sm:text-sm block w-full p-2.5 lg:!pr-[89px] md:!pr-[40px]">
+    <option value="US">English (India)</option>
+    <option value="CA">Canada</option>
+    <option value="FR">France</option>
+    <option value="DE">Germany</option>
+  </select>
+</form>
+
+    </div>
+
+  <p class="text-blackee font-Manrope md:text-xl sm:text-base font-medium sm:text-start xxs:text-center mt-[55px]">©2023, Autocation24</p>
+  </div>
+
+</footer>
+<!-- flowbite  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<!-- date picker  -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
+<script src="http://cdn.craig.is/js/rainbow-custom.min.js"></script>
+<script>
+      $(document).ready(function() {
+        	$.datetimepicker.setLocale('pt-BR');
+       	$('#datetimepicker').datetimepicker();
+      });
+      $(document).ready(function() {
+        	$.datetimepicker.setLocale('pt-BR');
+       	$('#datetimepicker1').datetimepicker();
+      });
+</script>
+<!-- end  -->
+</body>
+</html>
